@@ -1,25 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Dati_ISTAT</title>
-
+    <title>Grafici ISTAT</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <h1>Dati ISTAT</h1>
-        <p>Seleziona la categoria e di seguito visualizzerai i dati realtivi </p>
-    </div>
-    <div class="selection">
-        <select name="Categoria" id="Select1">
-            <
-        </select>
-    </div>
-    <div class="diagram">
 
-    </div>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+<h2>Seleziona categoria:</h2>
+<select id="Select1"></select>
+
+<h3>Spesa per sottocategoria</h3>
+<canvas id="chart1" width="400" height="200"></canvas>
+
+<h3>Percentuale spesa per sottocategoria</h3>
+<canvas id="chart2" width="400" height="200"></canvas>
+<script src="script.js"></script>
 </body>
+</html>
